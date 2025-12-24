@@ -1,0 +1,7 @@
+{
+  "name": "Lallan Shop UP",
+  "description": "A role-based supply chain tracking demonstration connecting Manufacturers, Sellers, and Buyers.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
