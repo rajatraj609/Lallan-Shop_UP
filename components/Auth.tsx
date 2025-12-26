@@ -305,7 +305,7 @@ const Auth: React.FC<Props> = ({ onLogin }) => {
             <div className="hidden md:flex flex-col justify-between p-12 bg-neutral-900/60 relative border-r border-white/5 overflow-hidden">
                {/* Background Image Fix: Using inline style for reliability */}
                <div 
-                 className="absolute inset-0 bg-cover bg-center opacity-30 grayscale pointer-events-none"
+                 className="absolute inset-0 bg-cover bg-center opacity-40 pointer-events-none"
                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop')" }}
                ></div>
                
