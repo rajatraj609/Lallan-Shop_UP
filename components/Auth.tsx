@@ -302,8 +302,13 @@ const Auth: React.FC<Props> = ({ onLogin }) => {
          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 shadow-2xl rounded-3xl overflow-hidden border border-white/5 bg-neutral-900/60 backdrop-blur-xl mx-auto">
             
             {/* Left Panel - Hero/Visual (Hidden on Mobile) */}
-            <div className="hidden md:flex flex-col justify-between p-12 bg-neutral-900/60 relative border-r border-white/5">
-               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay grayscale"></div>
+            <div className="hidden md:flex flex-col justify-between p-12 bg-neutral-900/60 relative border-r border-white/5 overflow-hidden">
+               {/* Background Image Fix: Using inline style for reliability */}
+               <div 
+                 className="absolute inset-0 bg-cover bg-center opacity-30 grayscale pointer-events-none"
+                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop')" }}
+               ></div>
+               
                <div className="relative z-10">
                  <h1 className="text-5xl font-display font-bold text-white tracking-tight mb-4 leading-tight">Curating<br/>Excellence.</h1>
                  <p className="text-neutral-400 text-lg font-light leading-relaxed max-w-xs">
